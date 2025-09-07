@@ -9,9 +9,9 @@
 )
 
 #set heading(numbering: none)
-#show heading: set text(font: "Arial", weight: "regular", fill: rgb("#2f5496"))
+#show heading: set text(font: "Aptos", weight: "regular", fill: rgb("#2f5496"))
 
-#set text(font: "Arial")
+#set text(font: "Aptos")
 
 #let expenseConfig = yaml("config.yaml")
 #let expenses = yaml("expenses.yaml")
