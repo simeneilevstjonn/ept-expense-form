@@ -14,7 +14,7 @@ jobs:
         run: bash scripts/install-mscorefonts.sh
 
       - name: Install ghostscript and imagemagick
-        run: apt-get install -y ghostscript imagemagick
+        run: sudo apt-get install -y ghostscript imagemagick
 
       - name: Install pip libraries
         run: pip3 install PyYAML --break-system-packages
