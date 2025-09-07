@@ -10,9 +10,6 @@ jobs:
       - name: Install Typst
         run: bash scripts/typst-install.sh 0.12.0
 
-      - name: Install Microsoft Core fonts
-        run: bash scripts/install-mscorefonts.sh
-
       - name: Install ghostscript and imagemagick
         run: sudo apt-get install -y ghostscript imagemagick
 
