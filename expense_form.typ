@@ -30,6 +30,7 @@ Fill the form and send it to einord\@equinor.no. Remember to include all relevan
 #table(
   columns: (45.6mm, 113.6mm),
   align: left,
+  stroke: .5pt,
   [Full name:], [#expenseConfig.expenseClaimer.fullName],
   [Address:], [#expenseConfig.expenseClaimer.address],
   [Country:], [#expenseConfig.expenseClaimer.country],
@@ -43,6 +44,7 @@ Fill the form and send it to einord\@equinor.no. Remember to include all relevan
 #table(
   columns: (50%, 50%),
   align: left,
+  stroke: .5pt,
   [Name], [Team],
   ..expenseConfig.team.map(member => (member.name, member.team)).flatten()
 )
@@ -60,6 +62,7 @@ Fill the form and send it to einord\@equinor.no. Remember to include all relevan
 #table(
   columns: (33.33%, 33.33%, 33.33%),
   align: left,
+  stroke: .5pt,
   [What], [Cost], [Currency],
   ..expenses.expenses.map(expenseToCells).flatten(),
   [Total], [], [NOK]
@@ -70,6 +73,7 @@ Fill the form and send it to einord\@equinor.no. Remember to include all relevan
 #table(
   columns: (33.33%, 33.33%, 33.33%),
   align: left,
+  stroke: .5pt,
   [G/L Account], [Cost Center /WBS], [Amount],
   [#expenseConfig.equinorData.glAccount],
   [#expenseConfig.equinorData.costCenter],
@@ -81,6 +85,7 @@ Fill the form and send it to einord\@equinor.no. Remember to include all relevan
 #table(
   columns: (33.33%, 33.33%, 33.33%),
   align: (center, left, left),
+  stroke: .5pt,
   [Eployee Number:], [Name:], [Office loc:],
   [#expenseConfig.equinorData.employeeNumber],
   [#expenseConfig.equinorData.employeeName],
