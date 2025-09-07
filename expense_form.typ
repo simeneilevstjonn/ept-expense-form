@@ -65,7 +65,7 @@ Fill the form and send it to einord\@equinor.no. Remember to include all relevan
   stroke: .5pt,
   [What], [Cost], [Currency],
   ..expenses.expenses.map(expenseToCells).flatten(),
-  [Total], [], [NOK]
+  [Total], [#totalCost], [NOK]
 )
 #linebreak()
 
