@@ -1,0 +1,30 @@
+name: Build expense form
+on: [push]
+jobs:
+  build_typst:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up Git repository
+        uses: actions/checkout@v4
+
+      - name: Install Typst
+        run: bash scripts/typst-install.sh 0.12.0
+
+      - name: Install Microsoft Core fonts
+        run: bash scripts/install-mscorefonts.sh
+
+      - name: Install ghostscript and imagemagick
+        run: apt-get install -y ghostscript imagemagick
+
+      - name: Install pip libraries
+        run: pip3 install PyYAML --break-system-packages
+
+      - name: Build document
+        run: |
+           /home/runner/.typst/bin/typst compile expense_form.typ
+
+      - name: Upload PDF file
+        uses: actions/upload-artifact@v4
+        with:
+          name: expense_form
+          path: expense_form_with_receipts.pdf

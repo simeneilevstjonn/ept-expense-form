@@ -1,0 +1,22 @@
+expenseClaimer:
+  fullName: Ola Nordmann
+  address: Forusbeen 50, 4035 Stavanger
+  country: Norway
+  bankAccount: 6005 07 77963
+  tripReason: Equinor CTF 2025
+  tripDates: November 7, 2025 - November 9, 2025
+
+team:
+  - name: Ola Nordmann
+    team: EPT
+
+  - name: Kari Nordmann
+    team: EPT
+
+equinorData:
+  glAccount: 5893000
+  costCenter: C.ITD.15.003
+  employeeNumber: 764284
+  employeeName: Eirik Nordbø
+  employeeOfficeLocation: ST-FO DB23412-A
+  maximumReimbursementPerTeamMember: 3000
