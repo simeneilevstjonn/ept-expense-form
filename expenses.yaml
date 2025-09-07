@@ -3,16 +3,16 @@ expenses:
     description: Flight for Kari
     cost: 999
     receipt: kari_flight.pdf
-    reimberseToTeamMeber: Kari
+    reimburseToTeamMeber: Kari Nordmann
 
   - expenseType: transport
     description: Flight for Ola
     cost: 1299
     receipt: ola_flight.pdf
-    reimberseToTeamMeber: Ola
+    reimburseToTeamMeber: Ola Nordmann
 
   - expenseType: accomodation
     description: Hotel for Ola
     cost: 1793
     receipt: ola_hotel.png
-    eimberseToTeamMeber: Ola
+    reimburseToTeamMeber: Ola Nordmann

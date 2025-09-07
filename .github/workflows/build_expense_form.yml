@@ -19,15 +19,25 @@ jobs:
       - name: Install pip libraries
         run: pip3 install PyYAML --break-system-packages
 
-      - name: Build document
+      - name: Build expense form
         run: |
            /home/runner/.typst/bin/typst compile expense_form.typ
 
       - name: Append receipts
         run: python3 receipt_append.py
 
-      - name: Upload PDF file
+      - name: Build team report
+        run: |
+           /home/runner/.typst/bin/typst compile expense_report.typ
+
+      - name: Upload form PDF file
         uses: actions/upload-artifact@v4
         with:
           name: expense_form
           path: expense_form_with_receipts.pdf
+
+      - name: Upload report PDF file
+        uses: actions/upload-artifact@v4
+        with:
+          name: team_report
+          path: expense_report.pdf
